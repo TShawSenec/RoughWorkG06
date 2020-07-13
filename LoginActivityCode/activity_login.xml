@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+<androidx.appcompat.widget.Toolbar
+    app:layout_constraintTop_toTopOf="parent"
+    android:id="@+id/nav_bar"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:background="@color/navbarC"
+    >
+
+</androidx.appcompat.widget.Toolbar>
+<ImageView
+    android:id="@+id/logo_view"
+    app:layout_constraintTop_toBottomOf="@+id/nav_bar"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/logo"></ImageView>
+    <EditText
+        android:id="@+id/user_text"
+        app:layout_constraintTop_toBottomOf="@+id/logo_view"
+        android:hint="Email or Username"
+        android:layout_width="match_parent"
+        android:layout_height="25pt"
+        android:layout_marginLeft="20pt"
+        android:layout_marginRight="20pt"
+        android:inputType="textEmailAddress"
+        >
+
+    </EditText>
+    <EditText
+        android:id="@+id/passtext"
+        app:layout_constraintTop_toBottomOf="@+id/user_text"
+        android:layout_width="match_parent"
+        android:layout_height="25pt"
+        android:layout_marginLeft="20pt"
+        android:layout_marginRight="20pt"
+        android:layout_marginTop="10pt"
+        android:hint="Password"
+        android:textColorHint="@color/textColor"
+        android:backgroundTint="@color/navbarC"
+        android:inputType="textPassword">
+
+    </EditText>
+    <Button
+        android:id="@+id/login_button"
+        app:layout_constraintTop_toBottomOf="@+id/passtext"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="5pt"
+        android:textSize="6pt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textColor="@color/white"
+        android:background="@color/orange"></Button>
+    <Button
+        android:id="@+id/signup_button"
+        app:layout_constraintTop_toBottomOf="@+id/login_button"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:textSize="6pt"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="5pt"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:textColor="@color/orange"
+        android:background="@color/white"
+        style="?android:attr/borderlessButtonStyle"></Button>
+</androidx.constraintlayout.widget.ConstraintLayout>
