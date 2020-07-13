@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+<androidx.appcompat.widget.Toolbar
+    app:layout_constraintTop_toTopOf="parent"
+    android:id="@+id/nav_bar"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:background="@color/navbarC"
+    >
+    <ImageButton
+        android:id="@+id/backbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="?attr/homeAsUpIndicator"
+        android:backgroundTint="@color/white"
+        android:background="?attr/selectableItemBackgroundBorderless"/>
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="@color/orange"
+    android:text="Sign Up"/>
+</androidx.appcompat.widget.Toolbar>
+
+    <EditText
+        android:id="@+id/email_text"
+        app:layout_constraintTop_toBottomOf="@+id/nav_bar"
+        android:hint="Email or Username"
+        android:layout_width="match_parent"
+        android:layout_height="25pt"
+        android:layout_marginLeft="20pt"
+        android:layout_marginRight="20pt"
+        android:backgroundTint="@color/black"
+        android:inputType="textEmailAddress"
+        >
+
+    </EditText>
+    <EditText
+        android:id="@+id/user_text"
+        app:layout_constraintTop_toBottomOf="@+id/email_text"
+        android:hint="Email or Username"
+        android:layout_width="match_parent"
+        android:layout_height="25pt"
+        android:layout_marginTop="5pt"
+        android:layout_marginLeft="20pt"
+        android:layout_marginRight="20pt"
+        android:backgroundTint="@color/black"
+        android:inputType="textPersonName"
+        >
+
+    </EditText>
+    <EditText
+        android:id="@+id/passtext"
+        app:layout_constraintTop_toBottomOf="@+id/user_text"
+        android:layout_width="match_parent"
+        android:layout_height="25pt"
+        android:layout_marginLeft="20pt"
+        android:layout_marginRight="20pt"
+        android:layout_marginTop="5pt"
+        android:backgroundTint="@color/black"
+        android:hint="Password"
+        android:inputType="textPassword">
+
+    </EditText>
+    <EditText
+        android:id="@+id/passtextConfirm"
+        app:layout_constraintTop_toBottomOf="@+id/passtext"
+        android:layout_width="match_parent"
+        android:layout_height="25pt"
+        android:layout_marginLeft="20pt"
+        android:layout_marginRight="20pt"
+        android:layout_marginTop="5pt"
+        android:backgroundTint="@color/black"
+        android:hint="Confirm Password"
+        android:inputType="textPassword">
+
+    </EditText>
+    <RadioButton
+        app:layout_constraintTop_toBottomOf="@id/passtextConfirm"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:id="@+id/terms_services_radio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:buttonTint="@color/black"
+        android:text="I agree to terms and services."
+        ></RadioButton>
+    <Button
+        android:id="@+id/signup_button"
+        app:layout_constraintTop_toBottomOf="@+id/terms_services_radio"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="5pt"
+        android:textSize="6pt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:textColor="@color/white"
+        android:background="@color/orange"></Button>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
