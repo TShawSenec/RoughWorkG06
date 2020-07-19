@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    <androidx.appcompat.widget.Toolbar
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/nav_bar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="@color/navbarC"
+        >
+        <ImageButton
+            android:id="@+id/backbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="?attr/homeAsUpIndicator"
+            android:backgroundTint="@color/white"
+            android:background="?attr/selectableItemBackgroundBorderless"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/orange"
+            android:text="Your Profile"/>
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/name_text"
+        app:layout_constraintTop_toBottomOf="@+id/nav_bar"
+        android:layout_width="match_parent"
+        android:layout_height="25pt"
+        android:text ="Place Holder"
+        android:layout_margin="5pt"
+        android:textColor="@color/black"
+        >
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/email_text"
+        android:text="Place Holder"
+        android:layout_margin="5pt"
+        app:layout_constraintTop_toBottomOf="@+id/name_text"
+        android:layout_width="match_parent"
+        android:layout_height="25pt"
+        android:textColor="@color/black"
+        >
+
+    </TextView>
+    <Button
+        android:id="@+id/texthintbutton"
+        app:layout_constraintTop_toBottomOf="@+id/email_text"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:textSize="4pt"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="5pt"
+        android:layout_height="wrap_content"
+        android:text="View password hint?"
+        android:textColor="@color/orange"
+        android:background="@color/white"
+        style="?android:attr/borderlessButtonStyle"></Button>
+    <Button
+        android:id="@+id/edit_button"
+        app:layout_constraintTop_toBottomOf="@+id/texthintbutton"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="5pt"
+        android:textSize="6pt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign In"
+        android:textColor="@color/white"
+        android:background="@color/orange"></Button>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
